@@ -129,7 +129,7 @@ export default function ContactsPage() {
           <div className="text-center text-muted">
             <MapPin className="h-8 w-8 mx-auto mb-3 text-accent" />
             <div className="text-sm">Здесь будет карта</div>
-            <div className="text-xs mt-1">г. Душанбе</div>
+            <div className="text-xs mt-1">г. Худжанд</div>
           </div>
         </div>
       </Section>
