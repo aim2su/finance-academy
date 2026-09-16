@@ -1,0 +1,30 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="v3-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="v3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1236" />
+      <stop offset="100%" stop-color="#0B061A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Знак -->
+  <g transform="translate(4, 4)">
+    <circle cx="26" cy="26" r="24" stroke="url(#v3-grad)" stroke-width="3" fill="url(#v3-bg)" />
+    
+    <!-- Раскрытая книга (две половинки) -->
+    <path d="M26 14 L12 18 L12 36 L26 32 Z" fill="url(#v3-grad)" opacity="0.9" />
+    <path d="M26 14 L40 18 L40 36 L26 32 Z" fill="#C4B5FD" opacity="0.9" />
+    
+    <!-- Восходящие столбцы (график) -->
+    <rect x="14" y="30" width="3" height="6" rx="1" fill="#FFFFFF" />
+    <rect x="20" y="26" width="3" height="10" rx="1" fill="#FFFFFF" />
+    <rect x="26" y="22" width="3" height="14" rx="1" fill="#FFFFFF" />
+    <rect x="32" y="18" width="3" height="18" rx="1" fill="#FFFFFF" />
+    
+    <!-- Корешок книги -->
+    <line x1="26" y1="14" x2="26" y2="38" stroke="#0B061A" stroke-width="1.5" />
+  </g>
+</svg>

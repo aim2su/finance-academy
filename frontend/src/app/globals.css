@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0B061A;
+  --color-bg-end: #1A0B33;
+  --color-card: #1C1236;
+  --color-border: rgba(139, 92, 246, 0.2);
+  --color-accent: #8B5CF6;
+  --color-accent-soft: #C4B5FD;
+  --color-btn: #4F46E5;
+  --color-text: #FFFFFF;
+  --color-muted: #A78BFA;
+
+  --font-sans: "Inter", "Manrope", system-ui, sans-serif;
+}
+
+[data-theme="light"] {
+  --color-bg: #F5F6FA;
+  --color-bg-end: #E8ECF4;
+  --color-card: #FFFFFF;
+  --color-border: rgba(15, 76, 129, 0.12);
+  --color-accent: #0F4C81;
+  --color-accent-soft: #3E6E9E;
+  --color-btn: #0F4C81;
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text);
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 12% 5%, rgba(168, 85, 247, 0.65), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 88% 12%, rgba(99, 102, 241, 0.55), transparent 55%),
+    radial-gradient(ellipse 45% 40% at 50% 45%, rgba(139, 92, 246, 0.30), transparent 65%),
+    radial-gradient(ellipse 80% 60% at 20% 100%, rgba(139, 92, 246, 0.45), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 95% 95%, rgba(79, 70, 229, 0.35), transparent 60%),
+    linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-end) 100%);
+}
+
+[data-theme="light"] body::before {
+  background:
+    radial-gradient(ellipse 60% 50% at 12% 5%, rgba(15, 76, 129, 0.22), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 88% 12%, rgba(200, 169, 106, 0.28), transparent 55%),
+    radial-gradient(ellipse 45% 40% at 50% 45%, rgba(15, 76, 129, 0.10), transparent 65%),
+    radial-gradient(ellipse 80% 60% at 20% 100%, rgba(15, 76, 129, 0.14), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 95% 95%, rgba(62, 110, 158, 0.16), transparent 60%),
+    linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-end) 100%);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 8px;
+}
