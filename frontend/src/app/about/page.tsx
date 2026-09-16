@@ -39,7 +39,7 @@ export default function AboutPage() {
       <Section
         eyebrow="О Farovon Academy"
         title="Академия навыков, которые работают"
-        subtitle="Мы создали Farovon Academy, чтобы дать жителям Душанбе доступ к практическому образованию в сферах, которые действительно востребованы на рынке."
+        subtitle="Мы создали Farovon Academy, чтобы дать жителям в Худжанде доступ к практическому образованию в сферах, которые действительно востребованы на рынке."
         className="!pb-8"
       >
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -74,7 +74,7 @@ export default function AboutPage() {
       <Section eyebrow="Миссия" title="Зачем мы это делаем">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-muted leading-relaxed">
-            Образование в Таджикистане часто оторвано от реальности: студенты
+            Образование в наше время часто оторвано от реальности: студенты
             изучают теорию, но не могут применить её на работе. Мы это меняем —
             учим конкретным навыкам, которые можно использовать сразу после
             окончания курса.
