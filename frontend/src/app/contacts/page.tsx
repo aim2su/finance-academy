@@ -11,7 +11,7 @@ const contactItems = [
   {
     icon: MapPin,
     label: "Адрес",
-    value: "г. Душанбе",
+    value: "г. Худжанд",
   },
   {
     icon: Phone,
