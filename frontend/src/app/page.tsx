@@ -120,7 +120,7 @@ export default function Home() {
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-medium mb-5 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/5">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-            Farovon Academy · Душанбе
+            Farovon Academy · Худжанд
           </span>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text tracking-tight leading-[1.05]">
